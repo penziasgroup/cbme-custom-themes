@@ -1,0 +1,40 @@
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+/* Increase the body font size on small touch devices */
+/* line 16, ../sass/responsive.smalltouch.landscape.scss */
+body {
+
+}
+
+/* =============================================================================
+ *   Mobile Menu Toggle
+ *   See your theme settings extensions for how to enable the menu toggle.
+ *   These are example styles for the menu toggle menu, you can use these in the
+ *   relevant responsive stylesheets as required. Modify to suit your design.
+ * ========================================================================== */
+/* line 26, ../sass/responsive.smalltouch.landscape.scss */
+.at-mt .at-menu-toggle {
+  /* The toggle link */
+  /* Menu items */
+}
+/* line 28, ../sass/responsive.smalltouch.landscape.scss */
+.at-mt .at-menu-toggle h2 {
+
+}
+/* line 31, ../sass/responsive.smalltouch.landscape.scss */
+.at-mt .at-menu-toggle h2 a {
+
+}
+/* line 39, ../sass/responsive.smalltouch.landscape.scss */
+.at-mt .at-menu-toggle ul.menu li a {
+
+}
+
+/*# sourceMappingURL=responsive.smalltouch.landscape.css.map */

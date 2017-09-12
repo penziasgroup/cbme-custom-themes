@@ -1,0 +1,2830 @@
+/*
+ * @file
+ * global.styles
+ *
+ * Styles you add here will load for all device sizes, they are "global", as
+ * opposed to "responsive" styles, which only load for a given breakpoint (media
+ * query) that you set in theme settings. See the README for more details.
+ *
+ *
+ * How to use this file:
+ * --------------------
+ *
+ * There are many empty selectors and some basic styles to act as a guide.
+ * Nothing is set in stone and you can change anything - even delete all of it
+ * and start with your own clean slate.
+ *
+ * To FORCE PRINT all selectors you can search and replace a single { (opening
+ * curly brace) and insert an empty comment. This is very useful in conjuction
+ * with FireSass: https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
+ *
+ * See global.base also which includes normalize.css and some additional
+ * helper classes and base styles.
+ */
+/* =============================================================================
+ *   Base
+ * ========================================================================== */
+/*
+ * To preserve theme settings never apply font properties to the HTML element.
+ * This is critically important if you are using the Responsive JavaScript
+ * feature as this relies on being able to set a pseudo font family on the HTML
+ * element. If you need to set default font properties of any kind use the BODY
+ * element as these can be overridden using font theme settings.
+ */
+/* line 41, ../sass/global.styles.scss */
+html {
+
+}
+
+/* line 45, ../sass/global.styles.scss */
+body {
+
+}
+
+/* =============================================================================
+ *   HTML Elements
+ * ========================================================================== */
+/* line 135, ../sass/global.styles.scss */
+pre,
+code,
+tt,
+samp,
+kbd,
+var {
+
+}
+
+/* =============================================================================
+ *   Wrappers
+ * ========================================================================== */
+/*
+ * Outer wrappers:
+ * - #page-wrapper: body > #page-wrapper
+ * - #page: body > #page-wrapper > #page
+ * - .container: body > #page-wrapper > #page.container
+ *
+ * The .container class holds the page width value from theme settings. You can
+ * style the .container class but do not add width such as border, padding,
+ * margins etc.
+ */
+/*
+ * Wraps all header elements - branding and .region-header
+ */
+/*
+ * Wraps the sidebars the content column
+ */
+/*
+ * Main content column wrapper
+ */
+/*
+ * Wraps the main-content-header, the content region and feed-icons. Use this
+ * wrapper to style the entire main content column
+ */
+/*
+ * Wraps the content region, avoid applying styles to this wrapper, its used
+ * mainly for position and invisible gutters and can be problematic to style
+ */
+/*
+ * Footer wrapper
+ */
+/*
+ * Panels may need additional margin wrangling when in the $content region
+ */
+/*
+ * Full Width Wrappers
+ * These are used in the optional page--full-width-wrappers.tpl.php template.
+ * All have internal .container classes. In the full width wrapper template the
+ * .container classes set the width or max-width - you can style this but never
+ * add any width/margin/padding/borders etc to .container
+ */
+/*
+ * Wraps the leaderboard
+ */
+/*
+ * Wraps the header
+ */
+/* line 231, ../sass/global.styles.scss */
+#header-wrapper {
+  /* Debug styles, is this working */
+
+}
+
+/*
+ * Wraps the nav elements
+ */
+/*
+ * Wraps breadcrumb
+ */
+/*
+ * Wraps messages and help
+ */
+/*
+ * Wraps the secondary content/preface region
+ */
+/*
+ * Wraps the main content column
+ */
+/*
+ * Wraps the tertiary content/postfix region
+ */
+/*
+ * Footer wrapper
+ */
+/* line 289, ../sass/global.styles.scss */
+#footer-wrapper {
+  /* Debug styles, is this working? */
+
+}
+
+/* =============================================================================
+ *   Branding
+ * ========================================================================== */
+/*
+ * Wraps all the branding elements, logo, name and slogan
+ */
+/*
+ * Logo
+ */
+/* line 310, ../sass/global.styles.scss */
+#logo {
+
+}
+/* line 313, ../sass/global.styles.scss */
+#logo img {
+
+}
+
+/*
+ * Wrapper for the site name and slogan
+ */
+/*
+ * Site name (h1)
+ */
+/* line 328, ../sass/global.styles.scss */
+#site-name {
+    font-size: 50px;
+    color: #b6af9b;
+    letter-spacing: -.5px;
+    font-family: gotham-n;
+    font-weight: 300;
+    margin-left: -5px;
+    line-height: 1;
+}
+#site-name a{
+    color: #b6af9b;
+}
+#site-name .institute{
+    color: #59cae7;
+    font-weight: 500;
+}
+/* line 333, ../sass/global.styles.scss */
+#site-name a:link, #site-name a:visited {
+  text-decoration: none;
+}
+/* line 338, ../sass/global.styles.scss */
+#site-name a:hover, #site-name a:focus {
+  text-decoration: none;
+}
+
+/*
+ * Site slogan (h2)
+ */
+/* line 349, ../sass/global.styles.scss */
+#site-slogan {
+
+}
+
+/* =============================================================================
+ *   Page content header
+ * ========================================================================== */
+/*
+ * Main content header wraps the page title, tabs and actions links
+ */
+/*
+ * The main page title (h1)
+ */
+/* line 367, ../sass/global.styles.scss */
+#page-title {
+  margin: 0;
+}
+
+/* =============================================================================
+ *   Misc Global Styles
+ * ========================================================================== */
+/*
+ * Feed icons
+ */
+
+/*
+ * Generic styles for the more link
+ */
+/*
+ * Generic styles for links. See the ul.links declaration in node and comment stylesheets
+ */
+/* line 408, ../sass/global.styles.scss */
+ul.links {
+  margin: 0;
+  padding: 0;
+}
+/* line 412, ../sass/global.styles.scss */
+ul.links.inline {
+  display: block;
+}
+/* line 416, ../sass/global.styles.scss */
+ul.links li {
+  display: inline;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+
+/*
+ * Search results are an ordered list so reset the margin
+ */
+/* line 427, ../sass/global.styles.scss */
+.search-results {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =============================================================================
+ *   Regions
+ * ========================================================================== */
+/*
+ * Standard region wrapper, don't add width to any regions, you will bork the layout - no margin, padding or borders etc
+ */
+/*
+ * Regions have an inner div - perfect for adding margin, padding or borders
+ */
+/*
+ * Regions can be nested, such as when using Panels
+ */
+/*
+ * Header region, embedded in the #header
+ */
+/*
+ * Generally used to output Drupals help block, if the help module is enabled
+ */
+/*
+ * Secondary content
+ */
+/*
+ * Sits above the main content header, like a content-top region
+ */
+/*
+ * Sits below the main content, like a content-bottom region
+ */
+/*
+ * Sidebars - targets both
+ */
+/*
+ * First sidebar
+ */
+/*
+ * Second sidebar
+ */
+/*
+ * Tertiary content
+ */
+/*
+ * Footer region
+ */
+/* =============================================================================
+ *   Links
+ * ========================================================================== */
+/* line 540, ../sass/global.styles.scss */
+
+
+/* =============================================================================
+ *   Primary, Secondary and Menu Bar region menus
+ * ========================================================================== */
+/* line 560, ../sass/global.styles.scss */
+.nav {
+  clear: both;
+  margin: 10px 0;
+}
+/* line 564, ../sass/global.styles.scss */
+.nav ul,
+.nav ul.menu {
+  margin: 0;
+  padding: 0;
+}
+/* line 570, ../sass/global.styles.scss */
+.nav li,
+.nav ul.menu li {
+  display: inline;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 579, ../sass/global.styles.scss */
+.nav li a,
+.nav ul.menu li a {
+  display: block;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+/* line 591, ../sass/global.styles.scss */
+.nav .block {
+  margin-bottom: 0;
+}
+
+/* =============================================================================
+ *   Superfish
+ * ========================================================================== */
+/* line 601, ../sass/global.styles.scss */
+ul.sf-menu {
+  margin-bottom: 0;
+}
+/* line 604, ../sass/global.styles.scss */
+ul.sf-menu a {
+  border-left: 0;
+  border-top: 0;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+/* line 617, ../sass/global.styles.scss */
+ul.sf-menu li:hover, ul.sf-menu li.sfHover {
+  outline: 0;
+}
+/* line 624, ../sass/global.styles.scss */
+ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
+  outline: 0;
+}
+
+/*
+ * Superfish blocks
+ */
+/* line 640, ../sass/global.styles.scss */
+.block-superfish ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+/* line 651, ../sass/global.styles.scss */
+.block-superfish li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*
+ * Vertical style
+ */
+/* line 661, ../sass/global.styles.scss */
+.sf-vertical {
+  width: 100%;
+}
+/* line 664, ../sass/global.styles.scss */
+.sf-vertical li {
+  width: 100%;
+}
+/* line 669, ../sass/global.styles.scss */
+.sf-vertical li:hover ul, .sf-vertical li.sfHover ul {
+  left: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+/* line 677, ../sass/global.styles.scss */
+.sf-vertical li a {
+  padding: 0 10px;
+}
+
+/*
+ * Navbar style
+ */
+/* line 687, ../sass/global.styles.scss */
+.sf-navbar {
+  padding-bottom: 0 !important;
+}
+
+/*
+ * Sensible padding for the default style
+ */
+/* line 695, ../sass/global.styles.scss */
+.sf-menu.sf-style-default a {
+  padding: 0 10px;
+}
+
+/* =============================================================================
+ *   Menu Toggles
+ * ========================================================================== */
+/* line 705, ../sass/global.styles.scss */
+.at-mt .at-menu-toggle,
+.at-mt .at-menu-toggle ul,
+.at-mt .at-menu-toggle ul.menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+/* line 713, ../sass/global.styles.scss */
+.at-mt .at-menu-toggle-button {
+  margin: 0;
+}
+/* line 717, ../sass/global.styles.scss */
+.at-mt .at-menu-toggle ul a {
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+/* =============================================================================
+ *   Menus, usually blocks
+ * ========================================================================== */
+/* line 728, ../sass/global.styles.scss */
+ul.menu {
+  padding-left: 15px;
+}
+/* line 731, ../sass/global.styles.scss */
+ul.menu ul {
+  padding-left: 15px;
+}
+/* line 739, ../sass/global.styles.scss */
+ul.menu li {
+  margin: 0;
+}
+
+/* If li.content exists it's a problem, so reset the padding */
+/* line 768, ../sass/global.styles.scss */
+.block .menu li.content {
+  padding: 0;
+}
+
+/* =============================================================================
+ *   Book navigation menu
+ * ========================================================================== */
+/* line 785, ../sass/global.styles.scss */
+.book-navigation .page-up {
+  /* Prevent text wrapping to a new line, assumes English "up" is used (two characters) */
+  min-width: 2em;
+  white-space: nowrap;
+}
+/* line 791, ../sass/global.styles.scss */
+.book-navigation .menu {
+  margin-left: 0;
+}
+
+/* =============================================================================
+ *   Breadcrumbs
+ * ========================================================================== */
+/* line 801, ../sass/global.styles.scss */
+#breadcrumb {
+  margin: 10px 0;
+  /* If the label is set to show in theme settings the label class is added */
+}
+/* line 805, ../sass/global.styles.scss */
+#breadcrumb .breadcrumb-label {
+  font-size: 1em;
+  display: inline;
+  padding-right: 10px;
+}
+/* line 810, ../sass/global.styles.scss */
+#breadcrumb .breadcrumb-label:after {
+  content: ":";
+}
+/* line 815, ../sass/global.styles.scss */
+#breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+/* line 820, ../sass/global.styles.scss */
+#breadcrumb .with-breadcrumb-label ol {
+  display: inline;
+}
+/* line 824, ../sass/global.styles.scss */
+#breadcrumb li {
+  list-style: none;
+  display: inline;
+}
+
+/* =============================================================================
+ *   Pagers
+ * ========================================================================== */
+/* line 851, ../sass/global.styles.scss */
+ul.pager {
+  clear: both;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 858, ../sass/global.styles.scss */
+.item-list ul.pager li {
+  margin: 0;
+}
+
+/* line 863, ../sass/global.styles.scss */
+ul.pager li {
+  background-image: none;
+  display: inline;
+  list-style-type: none;
+  padding: .5em;
+}
+/* line 869, ../sass/global.styles.scss */
+ul.pager li.pager-current {
+  font-weight: 700;
+}
+
+/* line 875, ../sass/global.styles.scss */
+.block ul.pager li {
+  margin: 0;
+}
+
+/*
+ * Theme the various states of pager links
+ */
+/* =============================================================================
+ *   Skip Navigation
+ * ========================================================================== */
+/* line 912, ../sass/global.styles.scss */
+#skip-link {
+  left: 50%;
+  margin-left: -6.5em;
+  margin-top: 0;
+  padding: 0 0.5em;
+  position: absolute;
+  width: 12em;
+  z-index: 50;
+}
+/* line 921, ../sass/global.styles.scss */
+#skip-link a {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: block;
+  line-height: 2;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 931, ../sass/global.styles.scss */
+#skip-link a:link, #skip-link a:visited {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: block;
+  line-height: 2;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 942, ../sass/global.styles.scss */
+#skip-link a:hover, #skip-link a:focus, #skip-link a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+ *   Tabs (local tasks)
+ * ========================================================================== */
+/* line 955, ../sass/global.styles.scss */
+#tasks {
+  margin-bottom: 15px;
+}
+
+/* line 960, ../sass/global.styles.scss */
+ul.primary {
+  border-bottom-color: #ccc;
+  margin: 20px 0;
+  padding: 0 0 0 5px;
+}
+/* line 965, ../sass/global.styles.scss */
+ul.primary li {
+  display: block;
+  float: left;
+  margin: 0 1px -1px;
+}
+/* line 970, ../sass/global.styles.scss */
+ul.primary li a {
+  background-color: #f5f5f5;
+  border-color: #ccc;
+  margin-right: 1px;
+  padding: 0 10px;
+  display: block;
+  float: left;
+  height: 1.5em;
+  line-height: 1.5em;
+}
+/* line 980, ../sass/global.styles.scss */
+ul.primary li a:hover, ul.primary li a:focus {
+  background-color: #eee;
+  border-color: #ccc;
+}
+/* line 989, ../sass/global.styles.scss */
+ul.primary li.active a,
+ul.primary li.active a:hover,
+ul.primary li.active a:focus {
+  background-color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* line 999, ../sass/global.styles.scss */
+ul.secondary {
+  border-bottom: 1px solid #ccc;
+  margin: 1em 0 0;
+  padding: 0 .3em 1em;
+}
+/* line 1004, ../sass/global.styles.scss */
+ul.secondary li {
+  border-right: 0;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+/* line 1010, ../sass/global.styles.scss */
+ul.secondary li a:hover, ul.secondary li a.active {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+/* =============================================================================
+ *   Action links
+ * ========================================================================== */
+/* line 1024, ../sass/global.styles.scss */
+ul.action-links {
+  margin: 20px 0 0;
+  list-style: none;
+}
+
+/* =============================================================================
+ *  Field Styling
+ * ========================================================================== */
+/*
+ * Wrapper for any field
+ */
+/*
+ * Above and inline classes are on the field wrapper
+ */
+/*
+ * When labels are set to inline in field display settings the clearfix class is automatically added
+ */
+/* line 1051, ../sass/global.styles.scss */
+.field-label-inline {
+  /* Remove the margin on inline field lables to preserve vertical formatting */
+}
+/* line 1054, ../sass/global.styles.scss */
+.field-label-inline .field-label {
+  margin: 0;
+}
+
+/*
+ * Labels are h2 in Adaptivetheme. Use a strong selector to mitigate unwanted ineritance issues
+ */
+/* line 1062, ../sass/global.styles.scss */
+.field-label {
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  line-height: inherit;
+  margin-bottom: 0;
+}
+
+/*
+ * Field types (Core)
+ */
+/*
+ * Image fields use the <figure> and <figcaption> elements from HTML5
+ */
+/*
+ * Taxonomy
+ */
+/* line 1091, ../sass/global.styles.scss */
+.field-type-taxonomy-term-reference {
+  /* The same bottom margin as p, blockquote, ul, ol and dl */
+  margin-bottom: 1.5em;
+}
+/* line 1096, ../sass/global.styles.scss */
+.field-type-taxonomy-term-reference.field-label-inline .field-items {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1101, ../sass/global.styles.scss */
+.field-name-field-additional-reading .field-item,
+.field-type-taxonomy-term-reference.field-label-inline .field-item {
+  display: inline;
+  list-style: none;
+  padding: 0;
+  line-height: 32px;
+}
+.field-name-field-additional-reading .field-item:after,
+.field-type-taxonomy-term-reference.field-label-inline .field-item:after{
+    content: ', ';
+}
+.field-name-field-additional-reading .field-item:last-child:after,
+.field-type-taxonomy-term-reference.field-label-inline .field-item:last-child:after{
+    content: '';
+}
+
+/*
+ * Text
+ */
+/*
+ * Long text
+ */
+/*
+ * Text with summary
+ */
+/*
+ * File
+ */
+/*
+ * Number/Integer
+ */
+/*
+ * Decimal
+ */
+/*
+ * Number float
+ */
+/*
+ * List
+ */
+/*
+ * List boolean
+ */
+/*
+ * List integer
+ */
+/*
+ * List float
+ */
+/*
+ * Field types (Contrib)
+ */
+/*
+ * Named fields
+ */
+/*
+ * Underscores in field name are replaced with dashes
+ */
+/*
+ * Image Alignment Theme Settings - included here so you can easily override
+ */
+/*
+ * Float none setting
+ */
+/*
+ * Float left setting
+ */
+/* line 1215, ../sass/global.styles.scss */
+.ia-l .field-type-image figure,
+.iat-l .field-type-image figure {
+  margin: 5px 20px 15px 0;
+}
+
+/*
+ * Centered setting
+ */
+/* line 1224, ../sass/global.styles.scss */
+.ia-c .field-type-image figure,
+.iat-c .field-type-image figure {
+  margin: 5px auto 15px;
+}
+
+/*
+ * Float right setting
+ */
+/* line 1233, ../sass/global.styles.scss */
+.ia-r .field-type-image figure,
+.iat-r .field-type-image figure {
+  margin: 5px 0 15px 20px;
+}
+
+/* =============================================================================
+ *   Block Styling
+ * ========================================================================== */
+/*
+ * Main wrapper for most blocks, block_system_main does not have it
+ */
+/* line 1247, ../sass/global.styles.scss */
+.block {
+  margin-bottom: 20px;
+}
+.front #block-system-main{
+    margin-bottom: 0;
+}
+
+/*
+ * Inner wrapper for most blocks, good for margin, padding and borders, block_system_main does not have it
+ */
+/*
+ * The first block in the region
+ */
+/*
+ * The last block in the region
+ */
+/*
+ * Zebra striping for each block in the region
+ */
+/*
+ * Zebra striping for each block in the region
+ */
+/*
+ * Block title
+ */
+/* line 1285, ../sass/global.styles.scss */
+.block-title {
+  margin: 0;
+}
+
+/*
+ * Block content wrapper
+ */
+/*
+ * Match item list and block menu margin and padding
+ */
+/* line 1301, ../sass/global.styles.scss */
+.block-content ul,
+.block-content ol {
+  padding: 0 0 0 15px;
+}
+/* line 1306, ../sass/global.styles.scss */
+.block-content li {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Block for the latest news items in the first category
+ */
+/*
+ * Block for the latest news items in the first feed
+ */
+/*
+ * First block created with "Add block" link
+ */
+/*
+ * "Recent blog posts" block
+ */
+/*
+ * "Book navigation" block for the current book's table of contents
+ */
+/*
+ * "Recent comments" block
+ */
+/*
+ * "Active forum topics" block
+ */
+/*
+ * "New forum topics" block
+ */
+/*
+ * Language switcher block
+ */
+/*
+ * Custom menu block
+ */
+/*
+ * "Recent content" block
+ */
+/*
+ * "Syndicate" block for primary RSS feed; see also page.css's .feed-icon
+ */
+/*
+ * "Most recent poll" block
+ */
+/*
+ * "Author information" block for the profile of the page's author
+ */
+/*
+ * "Search form" block
+ */
+/*
+ * "Shortcuts" block
+ */
+/*
+ * "Popular content" block
+ */
+/*
+ * "Main menu" block
+ */
+/*
+ * "Management" block for Drupal management menu
+ */
+/*
+ * "Navigation" block for Drupal navigation menu
+ */
+/*
+ * "User menu" block for Drupal user menu
+ */
+/*
+ * "System help" block
+ */
+/*
+ * "Main page content" block
+ */
+/*
+ * "Powered by Drupal" block
+ */
+/*
+ * "User login form" block
+ */
+/*
+ * "Who's new" block for a list of the newest users
+ */
+/*
+ * "Who's online" block for a list of the online users
+ */
+/* =============================================================================
+ *   Node Styling
+ * ========================================================================== */
+/* line 1479, ../sass/global.styles.scss */
+.node {
+  margin-bottom: 20px;
+}
+/* line 1496, ../sass/global.styles.scss */
+.node .node-title {
+  margin: 0;
+}
+
+/*
+ * All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
+ */
+/* =============================================================================
+ *   Comment Styling - Comments, comment wrapper, comment form
+ * ========================================================================== */
+/*
+ * Wrapper for the list of comments and its titles
+ */
+/* line 1554, ../sass/global.styles.scss */
+#comments {
+  margin: 1.5em 0;
+}
+/* line 1558, ../sass/global.styles.scss */
+#comments h2.comment-title {
+  margin: 0;
+}
+/* line 1562, ../sass/global.styles.scss */
+#comments h2.comment-form {
+  margin: 0;
+}
+
+/*
+ * Wrapper for a single comment
+ */
+/* line 1572, ../sass/global.styles.scss */
+.comment {
+  margin-bottom: 20px;
+}
+
+/*
+ * Comment title
+ */
+/* line 1603, ../sass/global.styles.scss */
+.comment-title {
+  margin: 0;
+}
+
+/*
+ * Comment states
+ */
+/*
+ * Preview of the comment before submitting new or updated comment
+ */
+/*
+ * "New" marker for comments that are new for the current user
+ */
+/* line 1635, ../sass/global.styles.scss */
+.new {
+  color: #c00;
+}
+
+/*
+ * Nested comments are indented
+ */
+/* line 1643, ../sass/global.styles.scss */
+.indented {
+  margin-left: 40px;
+}
+
+/* =============================================================================
+ *   Forms
+ * ========================================================================== */
+/*
+ * Wrapper for a form element (or group of form elements) and its label
+ */
+/* line 1657, ../sass/global.styles.scss */
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 1px solid #c00;
+}
+/* line 1663, ../sass/global.styles.scss */
+.form-item label {
+  font-weight: 700;
+}
+/* line 1670, ../sass/global.styles.scss */
+.form-item .description {
+  font-size: 0.85em;
+}
+
+/*
+ * Highlight marks and form required mark
+ */
+/* line 1683, ../sass/global.styles.scss */
+.marker,
+.form-required {
+  color: #c00;
+}
+
+/*
+ * The submit button
+ */
+/* line 1697, ../sass/global.styles.scss */
+.container-inline div,
+.container-inline label {
+  display: inline;
+}
+
+/*
+ * Define consistent borders
+ */
+/* line 1706, ../sass/global.styles.scss */
+fieldset {
+  border: 1px solid #ccc;
+}
+
+/*
+ * Tips for Drupal's input formats
+ */
+/*
+ * Buttons used by contrib modules like Media
+ */
+/* line 1720, ../sass/global.styles.scss */
+a.button {
+  -moz-appearance: button;
+  -webkit-appearance: button;
+}
+
+/*
+ * Password confirmation
+ */
+/* line 1728, ../sass/global.styles.scss */
+.password-parent,
+.confirm-parent {
+  margin: 0;
+}
+
+/* =============================================================================
+ *   Tables
+ * ========================================================================== */
+/* line 1738, ../sass/global.styles.scss */
+table {
+  margin: 10px 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 1743, ../sass/global.styles.scss */
+table.sticky-header {
+  z-index: 10;
+}
+
+/* line 1749, ../sass/global.styles.scss */
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+  border-color: #ccc;
+}
+
+/* line 1759, ../sass/global.styles.scss */
+table,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* line 1766, ../sass/global.styles.scss */
+caption,
+th,
+td {
+  text-align: left;
+}
+
+/* line 1773, ../sass/global.styles.scss */
+thead tr {
+  font-weight: 700;
+  background-color: #e5e5e5;
+}
+
+/* line 1779, ../sass/global.styles.scss */
+td,
+th {
+  border-bottom: 0;
+  margin: 0;
+  padding: 5px 7px;
+}
+
+/* line 1790, ../sass/global.styles.scss */
+tbody tr {
+  border-top: 1px solid #ccc;
+}
+
+/* line 1795, ../sass/global.styles.scss */
+tr {
+  /* Table row striping */
+}
+/* line 1797, ../sass/global.styles.scss */
+tr.odd {
+  background: #fff;
+}
+/* line 1802, ../sass/global.styles.scss */
+tr.info, tr.even, tr:nth-child(2n+2) {
+  border-bottom: 0;
+  background-color: #f5f5f5;
+}
+/* line 1813, ../sass/global.styles.scss */
+tr.odd td.active {
+  background-color: #eee;
+}
+/* line 1817, ../sass/global.styles.scss */
+tr.even td.active {
+  background-color: #ebebeb;
+}
+
+/*
+ * Forum tables
+ * Core sets white-space to nowrap, which makes no sense
+ */
+/* line 1840, ../sass/global.styles.scss */
+#forum td.created, #forum td.posts, #forum td.topics, #forum td.last-reply, #forum td.replies, #forum td.pager {
+  white-space: normal;
+}
+
+/* =============================================================================
+ *   Messages
+ * ========================================================================== */
+/* line 1856, ../sass/global.styles.scss */
+div.messages {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+/* line 1861, ../sass/global.styles.scss */
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*
+ * Unpublished nodes
+ */
+/* line 1902, ../sass/global.styles.scss */
+.node-unpublished p.unpublished,
+.comment-unpublished p.unpublished {
+  color: pink;
+  color: rgba(239, 170, 170, 0.4);
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+/* line 186, ../sass/_custom.scss */
+.ie6-7 .node-unpublished p.unpublished > *, .ie6-7
+.comment-unpublished p.unpublished > * {
+  position: relative;
+}
+
+/* =============================================================================
+ *    Maintenance pages
+ * ========================================================================== */
+/* line 1913, ../sass/global.styles.scss */
+.maintenance-page .container {
+  padding: 40px 0;
+}
+/* line 1917, ../sass/global.styles.scss */
+.maintenance-page #site-name,
+.maintenance-page #page-title {
+  margin: 0;
+}
+
+/* line 1925, ../sass/global.styles.scss */
+.db-offline .container {
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 100%;
+  max-width: 960px;
+}
+/* line 1932, ../sass/global.styles.scss */
+.db-offline div.messages {
+  margin: 20px 0 0;
+}
+/* line 1936, ../sass/global.styles.scss */
+.db-offline #content {
+  padding: 20px 0;
+}
+
+/* =============================================================================
+ *   Misc overrides for contrib modules
+ * ========================================================================== */
+/*
+ * Admin menu overrides
+ */
+/* line 1949, ../sass/global.styles.scss */
+#admin-menu {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Devel Module
+ */
+/* line 1958, ../sass/global.styles.scss */
+.dev-query {
+  background: #eee;
+  padding: 30px;
+}
+
+/*
+ * Styleguide module tweaks
+ */
+/* line 1967, ../sass/global.styles.scss */
+#styleguide-header {
+  padding: 0 10px;
+}
+/* line 1970, ../sass/global.styles.scss */
+#styleguide-header .item-list {
+  font-family: inherit;
+  margin: 0 20px 20px 0;
+  min-height: 260px;
+  width: auto;
+}
+
+/* Begin Penzias Styles */
+
+/* General Structure */
+.region-leaderboard,
+#header,
+#messages,
+.region-primary-menu,
+.front .home-panel > div,
+#columns,
+.not-front #main-content-header .title-wrap,
+#block-views-home-slides-block .view{
+    max-width: 1400px;
+    margin: auto;
+}
+#block-views-home-slides-block .view,
+.region-leaderboard,
+.region-primary-menu,
+.front .home-panel > div,
+#header,
+#footer,
+#messages,
+#columns,
+.not-front #main-content-header .title-wrap{
+    padding: 0 50px;
+}
+#page-wrapper{
+    margin-top: -6px;
+}
+
+article,
+.node{
+    margin-bottom: 0;
+}
+
+#header-wrapper{
+    background-color: #FFF;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+#branding{
+    float: left;
+}
+#logo img{
+}
+#burger-wrap,
+#search-glass{
+    float: right;
+    margin-top: 4px;
+}
+.region-header{
+    float:right;
+    margin-top: 12px;
+}
+#search-glass{
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 19px;
+}
+#block-search-form{
+    margin-bottom: 0;
+}
+#block-search-form input[type='search']{
+    padding: 0 1px 7px;
+    width: 100%;
+    border: none;
+    color: #b6af9b;
+    border-bottom: 1px solid #b6ae9a;
+    font-family: raleway;
+    width: 255px;
+}
+#block-search-form .form-item{
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 15px;
+}
+#block-search-form input[type='search']:focus{
+    outline: none;
+}
+#block-search-form input[type='image']{
+    vertical-align: bottom;
+}
+#block-search-form form .container-inline > div{
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.burger{
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-top: 3px;
+}
+
+.burger img{
+    margin-right: 3px;
+    width: 40px;
+}
+
+/* Secondary Menus */
+
+#content .block-menu-block{
+    
+}
+.node-type-research .region-content-nav,
+.node-type-tool .region-content-nav,
+.node-type-brain-factor .region-content-nav{
+    display: none;
+}
+.region-content-nav .block{
+    margin-bottom: 35px;
+}
+.sidebar-first #content-column .content-inner{
+    padding-left: 50px;
+}
+
+.region-sidebar-first .block-menu-block ul.menu,
+#content .block-menu-block ul.menu,
+.region-content-nav .block-menu-block ul.menu{
+    padding: 0;
+    margin: 0;
+}
+
+.region-sidebar-first .menu-block-wrapper ul.menu li{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;  
+}
+.region-sidebar-first .menu-block-wrapper > ul.menu > li{
+    border-bottom: 2px solid #b7af9c;
+}
+.region-sidebar-first ul.menu li ul.menu li{
+    border-top: 2px dotted #c9c3b5;
+}
+.region-sidebar-first ul.menu li ul.menu li a{
+    padding-left: 40px;
+}
+.region-sidebar-first .menu-block-wrapper > ul.menu > li:last-child{
+    border-bottom: none;
+}
+.region-content-nav .block-menu-block ul.menu li{
+    padding-right: .5em;
+}
+#content .block-menu-block ul.menu li,
+.region-content-nav .block-menu-block ul.menu li{
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+}
+#content .block-menu-block ul.menu li:last-child,
+.region-content-nav .block-menu-block ul.menu li:last-child{
+    padding-right: 0;
+}
+.view-undergraduates .more-link a,
+.field-name-field-big-link a,
+#content .block-menu-block ul.menu li a,
+.region-content-nav .block-menu-block ul.menu li a{
+    display: block;
+    background: #000;
+    color: #FFF;
+    padding: 1.4vw;
+    font-size: 2.1vw;
+}
+.region-sidebar-first .block-menu-block ul.menu a{
+    display: block;
+    background: #f3f1ee;
+    color: #404040;
+    padding: 15px 20px;
+    font-size: 22px;
+}
+
+.region-sidebar-first .block-menu-block ul.menu .separator hr{
+    height: 0;
+    border-top: 1px solid #fd5862;
+    border-bottom: 1px solid #fea4a9;
+    margin: 25px 0;
+}
+
+.section-about #content .block-menu-block ul.menu li a{
+    font-size: 1.85vw;
+}
+.view-undergraduates .more-link a,
+.field-name-field-big-link a{
+    text-align: center;
+}
+.view-undergraduates .more-link a:hover,
+.region-sidebar-first .block-menu-block ul.menu a:hover,
+.region-sidebar-first .block-menu-block ul.menu a.active,
+.field-name-field-big-link a:hover,
+#content .block-menu-block ul.menu li a:hover,
+#content .block-menu-block ul.menu li a.active,
+.region-content-nav .block-menu-block ul.menu li a:hover,
+.region-content-nav .block-menu-block ul.menu li a.active{
+    font-weight: bold;
+}
+.section-academic-programs #content .block-menu-block{
+    background-image: url(images/academic-menu-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 15vw;
+    border-top: 2px solid #ed1c24;
+    margin-bottom: 35px;
+}
+.section-academic-programs #content .block-menu-block ul.menu li{
+    width: 25%;
+}
+
+.section-research #content .block-menu-block{
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+#content .block-menu-block ul.menu li,
+.region-content-nav .block-menu-block ul.menu li,
+.section-research #content .block-menu-block ul.menu li{
+    width: 33.33%;
+}
+.section-about #content .block-menu-block ul.menu li{
+    width: 25%;
+    padding-right: 4px;
+}
+
+
+/* Front */
+
+.front #content .node-content .contextual-links-wrapper a{
+    font-size: 14px;
+}
+.front .home-panel{
+    padding-top: 7vw;
+    padding-bottom: 14vw;
+}
+.front .home-panel.no-link{
+    padding-bottom: 0;
+}
+.front .small .node-inner-wrap{
+    max-width: 960px;
+    float: right;
+}
+.front .field-name-field-headline{
+    font-size: 4.3vw;
+    margin-bottom: 2.7vw;
+}
+.front .field-name-field-content{
+    font-size: 20px;
+    line-height: 1.4;
+}
+.front .blue{
+    background-color: #98a4ae;
+}
+.front .red{
+    background-color: #ed1c24;
+    color: #FFF;
+}
+.front .red .square-grid .views-row:hover article:before{
+    background-color: #fec540;
+}
+.front .green{
+    background-color: #fec540;
+}
+.front .green .square-grid .views-row:hover h2.node-title a{
+    background-color: #ed1c24;
+    color: #FFF;
+}
+.front .view-reference .field-name-field-content{
+    margin-bottom: 35px;
+}
+.home-panel{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.discover-grid .view-content:after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.discover-grid .views-row{
+    float: left;
+    width: 49.5%;
+    margin-right: 1%;
+}
+.discover-grid .views-row:last-child{
+    margin-right: 0;
+}
+.discover-grid .views-row img{
+    width: 100%;
+    vertical-align: bottom;
+}
+.discover-grid h2.node-title a{
+    color: #FFF;
+    background: #000;
+    display: block;
+    font-size: 2.56vw;
+    font-weight: normal;
+    padding: 12px 20px;
+}
+.discover-grid .field-name-field-discover-subtitle{
+    font-size: 2.15vw;
+    font-family: opensans-semi;
+    margin-bottom: 10px;
+}
+.discover-grid .field-name-field-discover-image{
+    margin-bottom: 20px;
+}
+.discover-grid .field-name-field-discover-link a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: opensans-bold;
+}
+
+/* Basic Pages & Paragraphs */
+
+.back-to-link{
+    margin-top: 30px;
+    text-align: right;
+}
+.back-to-link a{
+    font-size: 18px;
+    font-family: opensans-semi;
+    text-transform: uppercase;
+    color: #59cae7;
+}
+
+h1#page-title{
+  color: #59cae7;
+  font-size: 48px;
+  padding-top: 55px;
+  overflow: hidden;
+  margin-bottom: 45px;
+  font-family: opensans-semi;
+}
+h1#page-title > span{
+    display: block;
+    float: left;
+}
+h1#page-title > span:last-child{
+    margin-bottom: 0;
+}
+h1#page-title .section-title{
+    margin-top: 10px;
+}
+
+.node-page .field-name-body,
+.paragraphs-item-wysiwyg-content{
+    max-width: 1300px;
+}
+
+.field-name-field-paragraphs > .field-items > .field-item{
+    margin-bottom: 25px;
+}
+
+.field-name-field-paragraphs > .field-items > .field-item:last-child{
+    margin-bottom: 0;
+}
+
+/* Paragraphs */
+.field-name-field-image-grid-item{
+    margin-top: 35px;
+}
+.field-name-field-image-grid-item .field-item{
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.field-name-field-image-grid-item img{
+    display: block;
+}
+
+/* People */
+.people-card-content{
+    display: none;
+}
+
+.people-grid img{
+    display: block;
+}
+
+.people-grid .views-row{
+    float: left;
+    width: 25%;
+    padding-right: 8px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.people-grid .people-small-content{
+    position: relative;
+    cursor: pointer;
+}
+.people-grid .people-small-content .name-grouping{
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.3vw;
+    line-height: 1.6vw;
+    padding: .7vw 1.42vw;
+}
+.people-grid .views-field-field-person-image{
+    background: #7f7f7f;
+}
+.people-grid .people-small-content:hover .name-grouping{
+    background: rgba(237,28,36,.8); 
+}
+.people-grid .people-small-content .views-field-field-last-name,
+.card-content-inner .semi{
+    font-family: opensans-semi;
+}
+.card-content-inner{
+    font-size: 14px;
+}
+.card-content-inner .views-field-nothing-1{
+    margin-bottom: 15px;
+}
+.card-content-inner .first-last{
+    font-size: 24px;
+    margin: 0px 0 5px;
+}
+
+.person-contact{
+    margin-top: 25px;
+}
+.person-contact > div{
+    margin-bottom: 10px;
+}
+.person-contact > div:last-child{
+    margin-bottom: 0;
+}
+.views-field-field-email a{
+    color: #000;
+}
+
+.node-person{
+    border-top: 2px solid #ed1c24;
+    margin-bottom: 25px;
+}
+
+.node-person .field-name-field-person-image,
+.node-person .group-person-list-info{
+    display: table-cell;
+    vertical-align: top;
+}
+.node-person .group-person-list-info{
+    padding-right: 20px;
+}
+.node-type-person .node-person .group-person-list-info{
+    padding-right: 0;
+}
+.node-person .field-name-field-person-image{
+    min-width: 272px;
+    width: 272px;
+    padding-right: 30px;
+}
+.node-type-person .field-name-field-person-image{
+    padding-right: 0;
+    min-width: 450px;
+    width: 450px;
+}
+.node-type-person .group-person-content{
+    padding: 0 30px;
+}
+.node-person .field-name-field-person-image img{
+    display: block;
+    width: 100%;
+}
+.node-person .group-name-dept{
+    margin: 15px 0 20px;
+}
+
+.node-person .group-name-dept,
+.node-type-person .field-name-field-title-and-dept{
+    font-size: 14px;
+}
+.node-type-person .field-name-field-title-and-dept{
+    margin-bottom: 20px;
+}
+.node-person .group-name-grouping > div{
+    display: inline-block;
+    margin-right: 7px;
+    font-size: 24px;
+}
+.node-person .field-name-field-last-name{
+    font-family: opensans-semi;
+}
+
+.node-person .group-person-contact{
+    font-size: 14px;
+    margin-top: 20px;
+}
+.node-person .group-person-contact > div{
+    margin-bottom: 10px;
+}
+
+.node-person .group-person-contact > div:last-child{
+    margin-bottom: 0;
+}
+.node-person .field-name-field-email a{
+    color: #000;
+}
+
+.node-type-person .group-name-grouping{
+    background-color: #ed1c24;
+    color: #FFF;
+    padding: 25px 30px 10px;
+    margin-bottom: 25px;
+}
+
+/* Big Lists */
+
+.big-list .content-left img{
+    vertical-align: bottom;
+}
+
+.big-list .content-left,
+.big-list .content-right{
+    display: table-cell;
+    vertical-align: top;
+}
+.big-list .content-left .views-field{
+    width: 400px;
+    padding-right: 20px;
+}
+.big-list.people .content-left .views-field{
+    width: 220px;
+    padding-right: 30px;
+}
+.with-title .view-content{
+    margin-top: 50px;
+}
+.big-list .views-row{
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 2px dotted #c9c3b5;
+}
+.big-list .views-row:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.big-list .content-right{
+    padding-right: 25px;
+    padding-top: 10px;
+}
+.big-list .views-field-description{
+    font-size: 13px;
+}
+.big-list h2,
+.big-list h2 a{
+    font-size: 36px;
+    line-height: 44px;
+    font-family: opensans-semi;
+    margin: 0 0 15px;
+    color: #000;
+}
+
+.big-list.people h2,
+.big-list.people h2 a{
+    font-family: opensans-bold;
+}
+.big-list.people .content-right{
+    padding-top: 25px;
+}
+.big-list.people .views-row{
+    border-bottom: none;
+    border-top: 1px solid #4e3628;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+}
+
+.big-list.people .views-row .content-right a{
+    font-family: opensans-bold;
+}
+.big-list.people .contact-info{
+    margin: 15px 0;
+}
+.paragraphs-item-pc-border-text-area,
+.block.top-border{
+    border-top: 8px solid #b6ae9a;
+    margin-top: 50px;
+    padding-top: 45px;
+}
+.paragraphs-item-pc-border-text-area h2{
+    margin-bottom: 35px;
+}
+.block.top-border h2.block-title{
+    margin-bottom: 12px;
+}
+#block-views-research-block h2.block-title{
+    font-size: 35px;
+}
+.research-links > div{
+    display: inline-block;
+    font-size: 18px;
+    font-family: opensans-semi;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Events */
+.node-event.node-teaser{
+    border-top: 2px dotted #c9c3b5;
+}
+.featured-event .views-row{
+    border-top: 2px dotted #c9c3b5;
+    padding-top: 10px;
+    margin-bottom: 55px;
+    display: table;
+    width: 100%;
+}
+.node-event.node-feature-card .node-inner-wrap,
+.node-event.node-teaser .node-inner-wrap{
+    display: table;
+    width: 100%;
+}
+.node-event.node-feature-card .group-event-image,
+.node-event.node-teaser .group-event-image,
+.node-event.node-feature-card  .group-date,
+.node-event.node-teaser .group-date,
+.node-event.node-feature-card .group-event-info,
+.node-event.node-teaser .group-event-info{
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 20px;
+}
+.node-event.node-teaser .group-date{
+    border-top: 5px solid #58cae8;
+    font-size: 20px;
+    font-family: opensans-semi;
+    width: 200px;
+}
+.node-event.node-teaser .group-event-info{
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 55px;
+}
+.node-event.node-feature-card .group-event-image{
+    width: 350px;
+}
+.node-event.node-feature-card .group-event-info{
+    padding-left: 35px;
+}
+
+.no-image .group-event-info{
+    width: 100%;
+    padding-left: 0;
+}
+.node-event.node-feature-card h2.node-title a,
+.node-event.node-teaser h2.node-title,
+.node-event.node-teaser h2.node-title a{
+    font-family: opensans-semi;
+    line-height: 1.4;
+    font-size: 30px;
+    color: #000;
+}
+.node-event.node-feature-card h2.node-title{
+    padding-top: 0;
+}
+.node-event.node-teaser h2.node-title,
+.node-event.node-feature-card h2.node-title{
+    margin-bottom: 20px;
+}
+.node-type-event .field-name-field-event-date{
+    font-size: 22px;
+}
+
+.group-time-location{
+    font-family: opensans-semi;
+    font-size: 16px;
+}
+.node-type-event .group-time-location{
+    font-size: 24px;
+}
+.node-event.node-feature-card .group-time-location{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.node-event.node-feature-card .field-name-body{
+    font-size: 13px;
+}
+.node-teaser .group-time-location{
+    margin-bottom: 10px;
+}
+.group-time-location div{
+    display: inline-block;
+}
+.group-time-location > div{
+    margin-right: 4px;
+}
+.group-time-location > div:after{
+    content: '.';
+}
+.node-type-event .group-speaker-info{
+    margin-bottom: 50px;
+}
+.group-speaker-info{
+    margin-bottom: 20px;
+}
+.group-speaker-info .views-field-field-speaker-name,
+.group-speaker-info .field-name-field-speaker-name{
+    font-size: 24px;
+    font-family: opensans-semi;
+}
+.group-speaker-info .views-field-field-speaker-affiliation,
+.group-speaker-info .field-name-field-speaker-affiliation{
+    font-size: 16px;
+    font-family: opensans-semi;
+}
+
+.node-event.node-teaser .group-speaker-info > div:first-child .field-item:after{
+    content: ',';
+}
+.node-event.node-teaser .group-speaker-info > div:last-child .field-item:after{
+    content: '';
+}
+.featured-event .views-field-view-node,
+.link-to-event{
+    margin-bottom: 15px;
+}
+.featured-event .views-field-view-node a,
+.link-to-event a{
+    font-family: opensans-bold;
+    color: #00afec;
+    text-transform: uppercase;
+}
+.field-type-taxonomy-term-reference ul{
+    margin: 0;
+    padding: 0;
+}
+.field-type-taxonomy-term-reference ul li{
+    list-style: none;
+}
+.field-type-taxonomy-term-reference ul li a.active{
+    color: #ed1c24;
+}
+.group-event-buttons{
+    margin-top: 30px;
+}
+.node-type-event .group-event-buttons{
+    margin-top: 45px;
+    border-top: 2px dotted #c9c3b5;
+    padding-top: 45px;
+}
+.node-teaser .group-event-buttons{
+    margin-top: 0;
+}
+.group-event-buttons > div{
+    display: inline-block;
+    margin-right: 30px;
+}
+.field-name-field-registration-url a,
+div.addeventatc,
+div.addeventatc:hover,
+div.addeventatc:focus{
+    font-family: opensans-bold;
+    display: inline-block;
+    border: none;
+    color: #ed1c24 !important;
+    top: 0;
+    font-size: 18px;
+    border-radius: 0;
+    padding: 0;
+    line-height: 20px;
+}
+span.addeventatc_icon.atc_node{
+    display: none;
+}
+.addeventatc:active{
+    top: 0;
+}
+
+.view-events .view-header h2,
+.view-taxonomy-term .view-header h2{
+    font-size: 24px;
+}
+.view-events .attachment-after,
+.view-taxonomy-term .attachment-after{
+    margin-top: 35px;
+}
+
+/* Facilities Grid & Centers Grid */
+#block-views-undergraduates-block h2.block-title{
+    font-size: 2.6vw;
+    margin-bottom: 1.75vw;
+    font-weight: normal;
+}
+.square-grid .view-content:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.square-grid .views-row{
+    float: left;
+    width: 24.25%;
+    box-sizing: border-box;
+    position: relative;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+.square-grid .views-row:nth-child(4n+4){
+    margin-right: 0;
+}
+.square-grid.three-grid .views-row{
+    width: 33%;
+    margin-right: .5%;
+    margin-bottom: .5%;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+.square-grid.three-grid .views-row:nth-child(4n+4){
+    margin-right: .5%;
+    margin-bottom: .5%;
+}
+.square-grid.three-grid .views-row:nth-child(3n+3){
+    margin-right: 0;
+}
+.square-grid .views-row img{
+    display: block;
+    width: 100%;
+    vertical-align: bottom;
+}
+.square-grid h2.node-title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.square-grid .group-bottom-grid,
+.square-grid h2.node-title a{
+    display: block;
+    color: #FFF;
+    font-family: opensans-semi;
+    background: rgba(0,0,0,.8);
+    font-weight: normal;
+    line-height: 1.75vw;
+    font-size: 1.43vw;
+    padding: 1.4vw 2.5vw;
+}
+.square-grid.larger-font h2.node-title,
+.square-grid.larger-font .group-bottom-grid{
+    font-weight: normal;
+    line-height: 1.9vw;
+    font-size: 1.36vw;    
+}
+.square-grid.larger-font .group-bottom-grid{
+    padding: 1.4vw 1.4vw 2vw;
+}
+.square-grid.training-cards h2.node-title a{
+    font-size: 2.35vw;
+    padding: 2vw;
+    line-height: 1.25;
+}
+.square-grid .node-inner-wrap{
+    position: relative;
+}
+.square-grid .views-row article{
+    position: relative;
+}
+.square-grid .views-row:hover article:before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ed1c24;
+    z-index: 99;
+}
+.square-grid .views-row:hover h2.node-title a{
+    background: #fece57;
+    color: #000;
+}
+.view .views-exposed-widget{
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+.view .views-exposed-widget select{
+    font-size: 2.13vw;
+    padding: 1.1vw;
+    padding-right: 35px;
+    background-image: url(images/select-arrow.png);
+    background-position: right 10px top 55%;
+    background-repeat: no-repeat;
+    -moz-appearance: none; 
+    -webkit-appearance: none; 
+    appearance: none;
+    outline: none;
+    border: 2px solid #b3e7f5;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.view .views-exposed-widget select::-ms-expand{
+    display: none; 
+}
+
+/* CTA Cards */
+.group-cta-content{
+    background-color: #e8e6df;
+    padding: 30px 35px 60px 15px;
+}
+.group-cta-content .field-name-field-cta-title{
+    margin-bottom: 20px;
+}
+.group-cta-content .field-name-field-cta-title a{
+    font-size: 36px;
+    line-height: 1.3;
+    font-family: opensans-semi;
+    color: #000;
+}
+.group-cta-content .field-name-field-cta-summary{
+    font-size: 18px;
+    font-family: opensans-semi;
+}
+
+/* Research Detail */
+.node-type-event .group-event-top{
+    border-bottom: 8px solid #b6ae9a;
+    border-top: 2px dotted #c9c3b5;
+    display: table;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.node-type-event .group-event-image,
+.node-type-event .group-event-info{
+    display: table-cell;
+    vertical-align: top;
+}
+.node-type-event .group-event-image{
+    width: 500px;
+}
+.node-type-event .group-event-info{
+    background-color: #f3f1ee;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.node-full .field-name-field-research-image,
+.node-full .field-name-field-facility-image{
+    border-bottom: 8px solid #b6ae9a;
+    border-top: 2px dotted #c9c3b5;
+}
+.node-type-event .group-event-image img,
+.node-full .field-name-field-research-image img,
+.node-full .field-name-field-facility-image img{
+    vertical-align: bottom;
+    width: 100%;
+}
+.node-full h2.node-title{
+    font-family: opensans-bold;
+    font-size: 30px;
+    line-height: 34px;
+    margin: 30px 0;
+}
+
+span.lead-item{
+    margin-right: 8px;
+}
+span.lead-item:last-child{
+    margin-right: 0;
+}
+.group-contact{
+    margin-bottom: 1.5em;
+}
+.group-contact > h2,
+.node-full .field-label{
+    font-size: 24px;
+    font-family: opensans-semi;
+    margin-bottom: 0;
+}
+.field-name-field-research-leads,
+.node-type-research .research-web-url{
+    font-size: 14px;
+}
+.node-type-research .research-web-url,
+.node-type-research .field-name-field-research-leads,
+.node-type-research .field-name-body,
+.node-type-facilities .field-name-body{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.node-type-research .research-web-url,
+.node-type-research .field-name-field-funding-sources .field-label{
+    font-family: opensans-bold;
+}
+
+.field-name-field-facility-image-caption{
+    border-top: 1px solid #c2c2c2;
+    margin-top: 30px;
+    padding-top: 30px;
+    font-size: 11px;
+    font-style: italic;
+}
+
+/* Footer */
+#footer{
+    max-width: 1400px;
+    margin: auto;
+}
+#footer .block-content a{
+    color: #000;
+}
+#footer-wrapper{
+    border-top: 2px solid #ee232b;
+    margin-top: 55px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+#footer .block-title{
+    color: #000;
+    font-family: opensans-light;
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+#footer #block-block-1{
+    float: left;
+    font-size: 16px;
+}
+#footer #block-block-1 .block-content ul{
+    padding: 0;
+    margin: 0;
+}
+#footer #block-block-1 .block-content ul li{
+    display: inline-block;
+    vertical-align: middle;
+}
+#footer #block-block-1 .block-content ul li img{
+    width: 75%;
+}
+#footer #block-block-2{
+    font-size: 18px;
+    float: left;
+    margin-left: 5vw;
+}
+#footer #block-block-2 .block-content{
+    margin-top: 10px;
+}
+#footer #block-block-2 .block-content p{
+    margin-bottom: 0;
+}
+#footer #block-menu-menu-quicklinks{
+    float: right;
+    font-size: 18px;
+}
+#footer #block-menu-menu-quicklinks .block-content ul.menu{
+    padding: 0;
+    margin: 10px 0 0;
+}
+#footer #block-menu-menu-quicklinks .block-content ul.menu li{
+    list-style: none;
+}
+#footer h3{
+    font-family: opensans-semi;
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.page-search #search-form{
+    margin-top: 20px;
+}
+.page-search #search-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+.page-search .search-info{
+    display: none;
+}
+.iframe-responsive{
+    width: 100%;
+}
+.field-name-field-banner-image{
+    border-bottom: 7px solid #fc0d1b;
+}
+.field-name-field-banner-image img{
+    vertical-align: bottom;
+    width: 100%;
+}
+
+/* News */
+
+.news-listing .views-row{
+    border-bottom: 2px dotted #c9c3b5;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.news-listing .views-row:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.news-listing .news-image,
+.news-listing .news-content{
+    display: table-cell;
+    vertical-align: top;
+}
+.news-listing .news-content{
+    padding-right: 40px;
+}
+.news-listing .news-image{
+    width: 300px;
+    padding-right: 20px;
+}
+.news-listing .news-image img{
+    vertical-align: bottom;
+}
+
+.news-listing .news-title a{
+    font-size: 24px;
+    line-height: 1.25;
+    color: #000;
+    font-family: opensans-bold;
+}
+.news-listing .date-source{
+    font-family: opensans-semi;
+    margin-top: 15px;
+    font-size: 13px;
+    color: #808080;
+}
+.news-listing .views-field-body{
+    font-size: 13px;
+    margin-top: 15px;
+    font-family: opensans-semi;
+}
+.news-listing .date-source > span:after{
+    content: '. ';
+}
+.news-listing .date-source > span:last-child:after{
+    content: '';
+}
+.news-listing .news-source{
+    text-transform: uppercase;
+}
+
+.node-type-news .field-name-field-news-date{
+    font-size: 18px;
+    font-family: opensans-semi;
+}
+.node-type-news .group-news-author-source div{
+    display: inline;
+    font-family: opensans-semi;
+}
+
+.node-type-news .group-news-author-source > div:after{
+    content: ' / ';
+}
+
+.node-type-news .group-news-author-source > div:last-child:after{
+    content: '';
+}
+
+.node-type-news h2.node-title{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.group-featured-image,
+.paragraphs-items-field-news-slide-show{
+    border-bottom: 8px solid #b6ae9a;
+    border-top: 2px dotted #c9c3b5;
+    background-color: #f3f1ee;
+}
+.group-featured-image,
+.field-name-field-news-video,
+.paragraphs-items-field-news-slide-show{
+    margin-top: 40px;
+}
+.paragraphs-item-news-slideshow > .content > div,
+.node-type-news .group-featured-image > div{
+    display: table-cell;
+    vertical-align: bottom;
+}
+.field-name-field-news-slide-image,
+.node-type-news .group-featured-image .field-name-field-news-featured-image{
+    width: 45%;
+}
+.node-type-news .group-featured-image img{
+    vertical-align: bottom;
+}
+.field-name-field-news-slide-caption,
+.node-type-news .group-featured-image .field-name-field-news-featured-caption{
+    background-color: #f3f1ee;
+    color: #000;
+    width: 30%;
+    padding: 3.8vw 2vw 1.25vw 1.25vw;
+    font-size: 18px;
+}
+.field-name-field-news-slide-image img{
+    vertical-align: bottom;
+}
+
+.node-type-news .field-name-body{
+    margin-top: 25px;
+}
+
+.field-name-field-news-slide-show{
+    position: relative;
+}
+.cycle-button{
+    position: absolute;
+    top: 43%;
+    text-shadow: 2px 2px 2px #000;
+    color: #FFF;
+    font-size: 61px;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s linear;
+    z-index: 99;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    opacity: 1;
+    z-index: 500;
+}
+.cycle-prev{
+    left: 0;
+}
+.cycle-prev:before{
+    content: '\f104';
+    padding: 0 20px 0 15px;
+}
+.cycle-next{
+    right: 0;
+}
+.cycle-next:before{
+    content: '\f105';
+    padding: 0 15px 0 20px;
+}
+
+/* Primary Nav (Desktop) */
+.burger{
+    display: none;
+}
+
+.not-front .region-primary-menu nav{
+    border-bottom: 9px solid #b6ae9a;
+}
+
+.region-primary-menu nav,
+.region-primary-menu nav ul.menu{
+    margin: 0;
+    padding: 0;
+}
+.region-primary-menu nav ul.menu li{
+    display: inline-block;
+    font-size: 2.15vw;
+    line-height: 1;
+    font-family: opensans-light;
+    letter-spacing: 1px;
+    margin-right: 7vw;
+}
+.region-primary-menu nav ul.menu li.news,
+.region-primary-menu nav ul.menu li.events,
+.region-primary-menu nav ul.menu li.about{
+    width: 12%;
+}
+.region-primary-menu nav ul.menu li.partner-bibs{
+    text-align: right;
+}
+.region-primary-menu nav ul.menu li a{
+    color: #000;
+    display: block;
+    padding: 0 0 2.85vw;
+}
+.region-primary-menu nav ul.menu li:hover a,
+.region-primary-menu nav ul.menu li a:hover,
+.region-primary-menu nav ul.menu li a.active,
+.region-primary-menu nav ul.menu li.active-trail a{
+    color: #59cbe8;
+    font-family: opensans-bold;
+    letter-spacing: -.8px;
+}
+.region-primary-menu nav .menu-block-wrapper > ul.menu > li.active-trail{
+    font-family: opensans-bold;
+    letter-spacing: -.8px;
+}
+.region-primary-menu nav .menu-block-wrapper > ul.menu ul.menu{
+    display: none;
+    position: absolute;
+    padding-top: 9px;
+    z-index: 125;
+    min-width: 25vw;
+}
+.region-primary-menu nav .menu-block-wrapper > ul.menu li:hover ul.menu{
+    display: block;
+}
+.region-primary-menu nav .menu-block-wrapper > ul.menu ul.menu li{
+    display: block;
+    list-style: none;
+    width: auto;
+    border-bottom: 1px solid #FFF;
+}
+.region-primary-menu nav .menu-block-wrapper > ul.menu ul.menu li:last-child{
+    border-bottom: none;
+}
+.region-primary-menu nav .menu-block-wrapper > ul.menu ul.menu li a{
+    font-family: opensans-light;
+    background-color: #b7af9c;
+    color: #FFF;
+    padding: 1.57vw 2.15vw;
+    font-size: 1.57vw;
+    letter-spacing: 1px;
+}
+.region-primary-menu nav .menu-block-wrapper > ul.menu ul.menu li a:hover,
+.region-primary-menu nav .menu-block-wrapper > ul.menu ul.menu li a.active{
+    background-color: #59cbe8;
+    font-family: opensans-bold;
+    letter-spacing: 0;
+}
+
+/* BIBS Now */
+.square-grid.single-row .views-row{
+    float: left;
+    width: 24.43%;
+    margin-right: .75%;
+}
+.square-grid.single-row .views-row:nth-child(3n+3){
+    margin-right: .75%;
+}
+
+.square-grid.single-row .views-row:last-child{
+    margin-right: 0;
+}
+
+/* Home Slides */
+#block-views-home-slides-block{
+    padding-top: 2.7vw;
+    background-color: #eaecee;
+    margin-bottom: 0;
+}
+.home-slideshow .cycle-pager{
+    height: 10px;
+}
+.home-slideshow .cycle-pager .pager-item{
+    display: inline-block;
+    vertical-align: top;
+    width: 24.25%;
+    background: #59cbe8;
+    height: 10px;
+    margin-right: 1%;
+    cursor: pointer;
+}
+.home-slideshow .view-content .views-row{
+    width: 100%;
+}
+.home-slideshow .view-content .views-row img{
+    width: 100%;
+}
+.home-slideshow .cycle-pager{
+    background-color: #f3f1ee;
+}
+.home-slideshow .cycle-pager .pager-item.cycle-pager-active{
+    background: #003b70;
+}
+.home-slideshow .cycle-pager .pager-item:last-child{
+    margin-right: 0;
+}
+.node-home-slide h2.node-title{
+    margin-bottom: 2.5vw;
+}
+.node-home-slide h2.node-title a{
+    color: #000;
+    font-size: 3.43vw;
+    font-family: opensans-semi;
+}
+.node-home-slide img{
+    vertical-align: bottom;
+}
+
+/* Left Area Right Area Home Panel */
+.group-front-panel-areas:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.group-front-panel-areas > div{
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+.group-front-panel-areas > div:last-child{
+    margin-right: 0;
+}
+.group-front-panel-areas{
+    font-size: 20px;
+}
+.group-front-panel-areas h2,
+.group-front-panel-areas h2 a{
+    font-size: 2.56vw;
+    font-family: opensans;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.group-front-panel-areas a{
+    color: #000;
+}
+
+/* Grouped views */
+.grouped-view .view-content > h3{
+    border-top: 2px dotted #c9c3b5;
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+.grouped-view .view-content > h3:first-child{
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
+.grouped-view .views-row{
+    margin-bottom: 3px;
+}
+
+.views-field-field-course-code-url{
+    font-family: opensans-semi;
+    margin-right: 5px;
+}
+
+/* Leadership + Staff */
+
+.leadership-content{
+    font-family: opensans-semi;
+    padding-top: 15px;
+}
+
+.leadership-content .views-field-title,
+.leadership-content .views-field-title a{ 
+    font-size: 18px;
+    color: #000;
+}
+
+.leadership-content .views-field-field-people-job-titles{
+    font-size: 12px;
+    color: #404040;
+}
+
+.leadership-content .views-field-field-people-job-titles > div{
+    
+}
+
+/* Grid */
+.grid .views-row img{
+    vertical-align: bottom;
+}
+
+/* Column Counts */
+.col-count-7 .view-content:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.col-count-7 .view-content .views-row{
+    width: 188px;
+    float: left;
+    margin-right: 14px;
+    margin-bottom: 20px;
+}
+.col-count-7 .view-content .views-row:nth-child(7n+7){
+    margin-right: 0;
+}
+
+/* Paragraph Buttons */
+
+.field-name-field-pc-button-link{
+    border-top: 2px dotted #c9c3b5;
+    border-bottom: 2px dotted #c9c3b5;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+.field-name-field-pc-button-link .field-item a{
+    background-color: #f3f1ee;
+    display: block;
+    color: #404040;
+    font-size: 2vw;
+    padding: 1.2vw;
+    line-height: 1.3;
+    box-sizing: border-box;
+}
+.field-name-field-pc-button-link.button-num-2 .field-items:after{
+    clear: both;
+    content: '';
+    display: block;
+}
+.field-name-field-pc-button-link.button-num-2 .field-item{
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1%
+}
+.field-name-field-pc-button-link.button-num-2 .field-item:nth-child(2n+2){
+    margin-right: 0;
+}
+.field-name-field-pc-button-link.button-num-3 .field-item{
+    width: 32.66%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1%
+}
+.field-name-field-pc-button-link.button-num-3 .field-item:nth-child(3n+3){
+    margin-right: 0;
+}
+.field-name-field-pc-button-link.button-num-4 .field-item{
+    width: 24.25%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1%
+}
+.field-name-field-pc-button-link.button-num-4 .field-item:nth-child(4n+4){
+    margin-right: 0;
+}
+
+/* Front Page CBME */
+.front h2.block-title{
+    color: #59cae7;
+    font-size: 24px;
+    font-family: opensans-semi;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.front .block-views{
+    border-top: 8px solid #b6ae9a;
+}
+.front .region-sidebar-second .views-field-title a{
+    font-size: 24px;
+    line-height: 1.3;
+    color: #000;
+    font-family: opensans-semi;
+    padding-right: 2vw;
+}
+.front .region-sidebar-second .block{
+    margin-bottom: 60px;
+}
+.sidebar-second #content-column .content-inner{
+    padding-right: 30px;
+}
+.front #content-column h2.block-title{
+    margin-top: 0;
+    padding: 10px 25px;
+    background-color: #f3f1ee;
+    margin-bottom:0;
+}
+.front .home-slideshow .views-field-title{
+    background-color: #f3f1ee;
+}
+.front .home-slideshow .views-field-title a{
+    font-size: 2.7vw;
+    line-height: 1.2;
+    color: #000;
+    font-family: opensans-semi;
+    padding: 10px 25px 50px;
+    background-color: #f3f1ee;
+    display: block;
+    box-sizing: border-box;
+}
+.front .top-border{
+    margin-top: 0;
+    padding-top: 0;
+}
+.front #tasks{
+    display: none;
+}

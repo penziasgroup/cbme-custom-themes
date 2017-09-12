@@ -1,0 +1,794 @@
+/*
+ * responsive.custom.css is for custom media queries that are not set via the
+ * theme settings, such as cascading media queries.
+ *
+ * By default all the other responsive stylesheets used in Adaptivetheme use a
+ * "stacking method", however cascading media queries use a waterfall method so
+ * you can leverage the cascade and inheritance for all browsers that support
+ * media queries, regardless of screen size.
+ *
+ * @SEE http://zomigi.com/blog/essential-considerations-for-crafting-quality-media-queries/#mq-overlap-stack
+ *
+ * NOTE: this file loads by default, to disable got to your theme settings and
+ * look under the "CSS" settings tab.
+ */
+
+@media only screen and (min-width: 1500px) {
+    #site-name{
+        font-size: 62px;
+    }
+    .region-header{
+        margin-top: 20px;
+    }
+    #block-search-form input[type='search']{
+        width: 340px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .section-academic-programs #content .block-menu-block{
+        padding-top: 225px;
+    }
+    .square-grid .group-bottom-grid,
+    .square-grid h2.node-title a{
+        padding: 20px 20px 30px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .square-grid.larger-font h2.node-title,
+    .square-grid .group-bottom-grid{
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 1.25;
+    }
+    .square-grid.training-cards h2.node-title a{
+        font-size: 34px;
+        line-height: 1;
+        padding: 30px 35px;
+    }
+    .view-undergraduates .more-link a,
+    .field-name-field-big-link a, 
+    #content .block-menu-block ul.menu li a,
+    .region-content-nav .block-menu-block ul.menu li a{
+        padding: 20px;
+        font-size: 30px;
+    }
+    .region-primary-menu nav .menu-block-wrapper > ul.menu ul.menu li a{
+        font-size: 22px;
+        padding: 22px 30px;
+    }
+    .section-about #content .block-menu-block ul.menu li a{
+        font-size: 26px;
+    }
+    .front .home-panel{
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+    .people-grid .people-small-content .name-grouping{
+        font-size: 18px;
+        line-height: 22px;
+        padding: 10px 20px;
+    }
+    #block-views-undergraduates-block h2.block-title{
+        font-size: 36px;
+        font-weight: normal;
+        margin-bottom: 25px;
+    }
+    .region-primary-menu nav ul.menu li{
+        font-size: 30px; 
+    }
+    .region-primary-menu nav ul.menu li a{
+        padding: 0 0 40px;
+    }
+    .node-home-slide h2.node-title a{
+        font-size: 48px;
+    }
+    .node-home-slide h2.node-title{
+        margin-bottom: 35px;
+    }
+    #block-views-home-slides-block{
+        padding-top: 40px;
+    }
+    .front .field-name-field-headline {
+        font-size: 60px;
+        margin-bottom: 35px;
+    }
+    .discover-grid .field-name-field-discover-subtitle{
+        font-size: 30px;
+    }
+    .group-front-panel-areas h2,
+    .group-front-panel-areas h2 a,
+    .discover-grid h2.node-title a{
+        font-size: 36px;
+    }
+    .view .views-exposed-widget select{
+        font-size: 30px;
+        padding-right: 45px;
+    }
+    .field-name-field-news-slide-caption,
+    .node-type-news .group-featured-image .field-name-field-news-featured-caption{
+        padding: 20px 30px 40px 20px;
+    }
+    .front .home-slideshow .views-field-title a{
+        font-size: 38px;
+    }
+    .field-name-field-pc-button-link .field-item a{
+        font-size: 28px;
+        padding: 18px;
+    }
+    .region-primary-menu nav ul.menu li{
+        margin-right: 105px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    #logo{
+        max-width: 760px;
+    }
+    .field-name-field-news-slide-caption,
+    .node-type-news .group-featured-image .field-name-field-news-featured-caption{
+        font-size: 12px;
+    }
+    .field-name-field-news-slide-caption p,
+    .node-type-news .group-featured-image .field-name-field-news-featured-caption p{
+        margin-bottom: 10px;
+    }
+    #site-name{
+        font-size: 42px;
+    }
+    .region-header{
+        margin-top: 5px;
+    }
+    #block-search-form input[type='search']{
+        padding-bottom: 5px;
+    }
+    #header-wrapper{
+        padding-top: 70px;
+        padding-bottom: 45px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1080px){
+    .region-content-nav,
+    #block-menu-block-4,
+    #block-menu-block-5,
+    #primary-menu-wrapper,
+    .region-header{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    #header-wrapper{
+        padding-bottom: 0;
+    }
+    .header-inner{
+        padding-bottom: 45px;
+    }
+    .not-front .header-inner{
+        border-bottom: 9px solid #b6ae9a;
+    }
+    .node-type-event .group-event-info{
+        padding: 25px;
+    }
+    .node-type-event .group-speaker-info{
+        margin-bottom: 20px;
+    }
+    .node-type-event .group-event-image{
+        width: 350px;
+    }
+    .node-type-event .node-full h2.node-title{
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+    .node-type-event .group-speaker-info .field-name-field-speaker-name{
+        font-size: 20px;
+    }
+    .node-type-event .field-name-field-event-date{
+        font-size: 18px;
+    }
+    .node-type-event .group-time-location{
+        font-size: 20px;
+    }
+    h1#page-title{
+        padding-top: 35px;
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #block-search-form{
+        margin-top: 3px !important;
+    }
+    .node-core-department.node-teaser .field-name-field-dept-image{
+        width: 200px;
+        padding-right: 20px;
+    }
+    .node-core-department.node-teaser h2.node-title{
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .square-grid .views-row{
+    width: 33%;
+    margin-right: .5%;
+    margin-bottom: .5%;
+    padding-right: 0;
+    padding-bottom: 0;
+    }
+    .square-grid .views-row:nth-child(4n+4){
+        margin-right: .5%;
+        margin-bottom: .5%;
+    }
+    .square-grid .views-row:nth-child(3n+3){
+        margin-right: 0;
+    }
+    .square-grid h2.node-title a{
+        line-height: 2.1vw;
+        font-size: 1.8vw;
+    }
+    .people-grid .views-row{
+        width: 33.33%;
+    }
+    .people-grid .people-small-content .name-grouping{
+        font-size: 1.9vw;
+        line-height: 2.2vw; 
+    }
+    .node-person .field-name-field-person-image{
+        width: 180px;
+        min-width: 180px;
+    }
+    .node-person .group-name-grouping > div{
+        font-size: 22px;
+    }
+    .node-person .group-name-dept{
+        margin-bottom: 10px;
+    }
+    .node-person .group-person-contact{
+        margin-top: 15px;
+    }
+    .node-type-person .field-name-field-person-image{
+        width: 280px;
+        min-width: 280px;
+    }
+    .node-type-person .group-name-grouping,
+    .node-type-person .group-person-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h1#page-title{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    h1#page-title .section{
+        font-size: 42px;
+        line-height: 1.2;
+    }
+    .big-list.no-img-mobile .content-left{
+        display: none;
+    }
+    .with-title .view-content{
+        margin-top: 25px;
+    }
+    .paragraphs-item-pc-border-text-area, .block.top-border{
+        margin-top: 35px;
+        padding-top: 35px;
+    }
+    .group-cta-content .field-name-field-cta-title{
+        margin-bottom: 12px;
+    }
+    .group-cta-content .field-name-field-cta-title a{
+        font-size: 26px;
+    }
+    .group-cta-content{
+        padding: 20px 15px 45px 10px;
+    }
+    .group-cta-content .field-name-field-cta-summary{
+        font-size: 16px;
+    }
+    .field-name-field-pc-button-link .field-item a{
+        font-size: 1.9vw;
+        padding: 1vw;
+    }
+}
+@media only screen and (max-width: 980px) {
+    
+    #search-glass{
+        margin-top: 0;
+        margin-right: 15px;
+    }
+    #logo{
+        max-width: 550px;
+        margin-top: 3px;
+    }
+    .sidebar-first #content-column .content-inner{
+        padding-left: 0;
+    }
+    #footer #block-menu-menu-quicklinks{
+        float: none;
+    }
+    .front.sidebar-second #content-column .content-inner{
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .square-grid.single-row .views-row{
+        width: 49%;
+        margin-bottom: 2%;
+        margin-right: 2%;
+    }
+    .square-grid.single-row .views-row:nth-child(3n+3){
+        margin-right: 2%;
+    }
+    .square-grid.single-row .views-row:nth-child(2n+2){
+        margin-right: 0;
+    }
+    #block-views-undergraduates-block h2.block-title{
+        font-size: 26px;
+        margin-bottom: 20px;
+        line-height: 1.25;
+    }
+    .square-grid.larger-font h2.node-title,
+    .square-grid.larger-font .group-bottom-grid{
+        font-weight: normal;
+        line-height: 1.25;
+        font-size: 15px;    
+    }
+    .square-grid.larger-font .group-bottom-grid{
+        padding: 14px 7px;
+    }
+    .discover-grid .views-row{
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .front #content .group-front-panel-areas{
+        font-size: 16px;
+    }
+    .front #content .group-front-panel-areas h2,
+    .front #content .group-front-panel-areas h2 a,
+    .front #content .discover-grid h2.node-title a{
+        font-size: 20px;
+    }
+    .discover-grid .field-name-field-discover-image{
+        margin-bottom: 10px;
+    }
+    .discover-grid .field-name-field-discover-subtitle{
+        font-size: 18px;
+        line-height: 1.25;
+    }
+    .discover-grid .field-name-field-discover-link a{
+        font-size: 16px;
+    }    .burger img{
+        width: 36px;
+    }
+    #search-glass img{
+        width: 31px;
+    }
+    #burger-wrap, #search-glass{
+        padding-top: 47px;
+    }
+    #burger-wrap{
+        clear: both;
+        margin-right: 15px;
+    }
+    #burger-wrap, #search-glass{
+        padding-top: 15px;
+        float: left;
+    }
+    #block-search-form{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #block-views-home-slides-block .cycle-pager,
+    #block-views-home-slides-block .cycle-pager .pager-item{
+        height: 5px;
+    }
+    .front #content .square-grid.training-cards h2.node-title a{
+        font-size: 26px;
+        padding: 20px 15px;
+        line-height: 1.25;
+    }
+    .square-grid .group-bottom-grid, .square-grid h2.node-title a{
+        padding: 15px;
+    }
+    .group-front-panel-areas > div{
+        float: none;
+        width: 100%;
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+    .group-front-panel-areas > div:last-child{
+        margin-bottom: 0;
+    }
+    .square-grid.three-grid .views-row,
+    .square-grid.three-grid .views-row:nth-child(3n+3),
+    .square-grid.three-grid .views-row:nth-child(4n+4){
+        width: 49%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+    .square-grid.three-grid .views-row:nth-child(2n+2){
+        margin-right: 0;
+    }
+    .square-grid.training-cards h2.node-title a{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .news-listing .news-content{
+        padding-right: 0px;
+    }
+    .news-listing .news-image{
+        width: 250px;
+    }
+    .node-event.node-feature-card .group-event-image{
+        width: 200px;
+    }
+    .field-name-field-pc-button-link .field-item a{
+        font-size: 20px;
+    }
+    #block-menu-block-3{
+        display: none;
+    }
+}
+@media only screen and (max-width: 860px) {
+    .node-type-event .group-event-image, .node-type-event .group-event-info{
+        display: block;
+        width: 100%;
+    }
+    .front .home-slideshow .views-field-title a{
+        font-size: 24px;
+    }
+    #header-wrapper{
+        padding-top: 60px;
+    }
+    .region-header{
+        padding-top: 10px;
+    }
+    #site-name{
+        font-size: 46px;
+    }
+    #site-name .mobile-break{
+        display: block;
+    }
+    #footer .block-title{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    #footer h3{
+        font-size: 18px;
+    }
+    #footer #block-block-1 .block-content{
+        margin-top: 7px;
+    }
+    #footer #block-block-1 p{
+        font-size: 13px;
+    }
+    #footer #block-menu-block-2,
+    #footer #block-block-2{
+        font-size: 16px;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    h2,
+    .grouped-view .view-content > h3{
+        font-size: 26px;
+        line-height: 1.3;
+    }
+    h1#page-title .section{
+        font-size: 38px;
+    }
+    .front .field-name-field-content{
+        font-size: 18px;
+    }
+    .cycle-button{
+        display: none;
+    }
+    #block-views-home-slides-block .view, .region-leaderboard, .region-primary-menu, .front .home-panel > div, #header, #footer, #messages, #columns, .not-front #main-content-header .title-wrap{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #block-views-home-slides-block{
+        padding-top: 35px;
+    }
+    .region-content-nav .block-menu-block ul.menu li,
+    .section-academic-programs #content .block-menu-block ul.menu li,
+    .section-about #content .block-menu-block ul.menu li, .section-research #content .block-menu-block ul.menu li{
+        width: 100%;
+        padding-right: 0;
+    }
+    .view-undergraduates .more-link a,
+    .field-name-field-big-link a, 
+    #content .block-menu-block ul.menu li a,
+    .section-about #content .block-menu-block ul.menu li a,
+    .region-content-nav .block-menu-block ul.menu li a{
+        font-size: 16px;
+        line-height: 24px;
+        padding: 13px 20px;
+    }
+    .square-grid .views-row{
+        width: 49.5%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .square-grid .views-row:nth-child(4n+4),
+    .square-grid .views-row:nth-child(3n+3){
+        margin-right: 1%;
+        margin-bottom: 1%;
+    }
+    .square-grid .views-row:nth-child(2n+2){
+        margin-right: 0;
+    }
+    .square-grid h2.node-title a{
+        line-height: 19px;
+        font-size: 16px;
+    }
+    .people-grid .views-row{
+        width: 50%;
+    }
+    .people-grid .people-small-content .name-grouping{
+        font-size: 2.6vw;
+        line-height: 3.3vw;
+        padding: 2.4vw 3vw;
+    }
+    .node-type-person .node-person .field-name-field-person-image,
+    .node-type-person .node-person .group-person-list-info{
+        display: block;
+    }
+    .node-type-person .node-person .field-name-field-person-image{
+        padding-top: 20px;
+        margin-bottom: 20px;
+        min-width: 0;
+        width: auto;
+    }
+    .node-type-event .group-event-image,
+    .node-event.node-teaser .group-date,
+    .node-event.node-teaser .group-event-info{
+        display: block;
+    }
+    .node-event.node-teaser .group-event-info{
+        width: 100%;
+        padding-left: 0;
+        padding-top: 0;
+    }
+    .node-event.node-teaser .group-date{
+        border-top: 0;
+        width: 100%;
+    }
+    #footer #block-block-1,
+    #footer #block-block-2,
+    #footer #block-menu-block-2{
+        clear: both;
+        float: none;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    .view .views-exposed-widget select{
+        padding: 10px 40px 10px 10px;
+        font-size: 20px;
+    }
+    .intro-text{
+        font-size: 16px;
+    }
+    .paragraphs-item-news-slideshow > .content > div,
+    .node-type-news .group-featured-image > div{
+        display: block;
+    }
+    .field-name-field-news-slide-image,
+    .node-type-news .group-featured-image .field-name-field-news-featured-image,
+    .field-name-field-news-slide-caption,
+    .node-type-news .group-featured-image .field-name-field-news-featured-caption{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .field-name-field-news-slide-image img,
+    .node-type-news .group-featured-image .field-name-field-news-featured-image img{
+        width: 100%;
+    }
+    .node-core-department.node-teaser .field-name-body{
+        display: none;
+    }
+    .node-type-event .group-event-buttons{
+        padding-top: 35px;
+        margin-top: 35px;
+    }
+    .back-to-link{
+        text-align: left;
+    }
+    .field-name-field-pc-button-link.button-num-4 .field-item,
+    .field-name-field-pc-button-link.button-num-3 .field-item,
+    .field-name-field-pc-button-link.button-num-2 .field-item{
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .field-name-field-pc-button-link .field-item a{
+        padding: 18px;
+    }
+    .front #content-column h2.block-title{
+        padding-bottom: 5px;
+    }
+    .front .home-slideshow .views-field-title a{
+        padding: 5px 25px 30px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .node-core-department.node-teaser .field-name-field-dept-image,
+    .node-core-department.node-teaser .group-dept-info{
+        display: block;
+        width: 100%;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+    .node-core-department.node-teaser .field-name-field-dept-website{
+        margin-top: 20px;
+    }
+    .node-core-department.node-teaser h2.node-title,
+    .node-core-department.node-teaser h2.node-title a{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .front #content .node-home-slide h2.node-title a,
+    .front .field-name-field-headline{
+        font-size: 32px;
+        line-height: 33px;
+        margin-bottom: 30px;
+    }
+    .front #content .node-content, .front #content .node-content a{
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .front .no-link .field-name-field-content{
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .front .field-type-link-field .field-item,
+    .front .double-link .field-type-link-field .field-item,
+    .front .triple-link .field-type-link-field .field-item{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .node-person .field-name-field-person-image, .node-person .group-person-list-info{
+        display: block;
+    }
+    .node-person .field-name-field-person-image{
+        width: auto;
+        min-width: 0;
+        padding-right: 0;
+    }
+    .card-content-inner{
+        max-width: 280px;
+    }
+    
+}
+@media only screen and (max-width: 580px){
+    .view-events .attachment-before .group-event-info{
+        display: block;
+        width: 100%;
+        padding-left: 0;
+    }
+    .view-events .attachment-before .group-event-image{
+        width: auto;
+        min-width: 0;
+        padding-right: 0;
+        padding-top: 0;
+        margin-bottom: 15px;
+        display: block;
+    }
+    
+    .news-listing .news-image,
+    .news-listing .news-content{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .news-listing .news-image{
+        margin-bottom: 10px;
+    }
+    .news-listing .news-image img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .big-list.people .views-row{
+        margin-bottom: 40px;
+    }
+    .big-list.people .content-left, .big-list.people .content-right{
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+    .big-list.people .content-left .views-field{
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .big-list.people .content-left .views-field img{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .field-name-field-image-grid-item .field-item{
+        margin-right: 2%;
+        width: 48%;
+    }
+    .people-grid .views-row{
+        width: 100%;
+    }  
+    .people-grid .people-small-content .name-grouping{
+        font-size: 18px;
+        line-height: 24px;
+        padding: 16px 25px;
+    }
+    .card-content-inner .views-field-nothing-1{
+        max-width: 220px;
+    }
+    .square-grid.single-row .views-row{
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .square-grid.three-grid .views-row,
+    .square-grid.three-grid .views-row:nth-child(2n+2),
+    .square-grid.three-grid .views-row:nth-child(3n+3),
+    .square-grid.three-grid .views-row:nth-child(4n+4){
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    h1#page-title > span{
+        float: none;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .square-grid .views-row{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .square-grid .views-row:nth-child(4n+4), .square-grid .views-row:nth-child(3n+3){
+        margin-bottom: 20px;
+    }
+    #site-name{
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    #header-wrapper{
+        padding-top: 45px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .people-grid .people-small-content .name-grouping {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 10px 20px;
+    }
+    h1#page-title {
+        font-size: 26px;
+        line-height: 28px;
+    }
+    h1#page-title .section {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
