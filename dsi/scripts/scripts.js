@@ -69,8 +69,13 @@
         if($('.field-name-field-pc-button-link').length > 0){
             $('.field-name-field-pc-button-link').each(function(){
                 var children = $(this).children('.field-items').children().length;
-
-                $(this).addClass('button-num-' + children);
+                
+                if (children <= 4){
+                    $(this).addClass('button-num-' + children);
+                }else{
+                    $(this).addClass('button-num-4');
+                }
+                
             });
         }
         

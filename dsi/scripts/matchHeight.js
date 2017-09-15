@@ -28,7 +28,7 @@
             byRow: false
         });
         $('.field-name-field-pc-button-link .field-items .field-item a').matchHeight({
-            byRow: true
+            byRow: false
         });
         $('.home-slideshow .views-field-title').matchHeight({           
             byRow: false
