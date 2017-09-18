@@ -220,7 +220,7 @@ if(isset($section_title)){
             <!-- start: Branding -->
             <div<?php print $branding_attributes; ?>>
                 
-                <div id="site-name"><a href="/" title="home">Center for <span class="mobile-break"><span class="institute">Biomedical Engineering</span></span></a></div>  
+                <div id="site-name"><a href="<?php print $base_path; ?>" title="home">Center for <span class="mobile-break"><span class="institute">Biomedical Engineering</span></span></a></div>  
               
               <?php if ($site_logo): ?>
                 <div id="logo">
