@@ -60,7 +60,8 @@
         $('.home-slideshow .view-content').cycle({
                 slides: '> div',
                 swipe: 'true',
-                timeout: 0,
+                speed: 1000,
+                timeout: 5000,
                 pager: '.cycle-pager',
                 pagerTemplate: '<span class="pager-item"></span>',
         });
